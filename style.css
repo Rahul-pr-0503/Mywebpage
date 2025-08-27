@@ -52,7 +52,7 @@ body {
   color: #fff;
 }
 .section {
-  min-height: 45vh;   
+  min-height: 65vh;   
   padding: 40px 20px; 
   display: flex;
   flex-direction: column;
@@ -102,6 +102,7 @@ body {
     font-size: 0.9em;
   }
 }
+
 
 
 
