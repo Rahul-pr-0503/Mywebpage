@@ -1,4 +1,5 @@
-* {
+* 
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -73,6 +74,20 @@ body {
 #about { background: black; color: white; }
 #project { background: black; color: white; }
 #contact { background: black; color: white; }
+
+
+
+
+
+
+
+
+.menu-btn {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+}
 @media (max-width: 768px) {
   .prema {
     padding: 10px 20px;
@@ -102,8 +117,6 @@ body {
     font-size: 0.9em;
   }
 }
-
-
 
 
 
