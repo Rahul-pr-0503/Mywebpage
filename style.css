@@ -1,17 +1,19 @@
-
-* {
+* 
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Times New Roman', Times, serif;
   scroll-behavior: smooth;
 }
-
-
-.navbar {
+.rahul img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.prema {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,24 +26,21 @@ body {
   transition: background 0.3s, box-shadow 0.3s;
   z-index: 1000;
 }
-
-.navbar.scrolled {
-  background: #111;
+.prema.scrolled {
+  background: rgb(0, 79, 143);
+  color: black;
   box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
-
-.navbar .logo {
+.prema .logo {
   font-size: 1.5em;
   color: #fff;
   font-weight: bold;
 }
-
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-
 .nav-links li a {
   text-decoration: none;
   color: white;
@@ -49,70 +48,91 @@ body {
   border-radius: 5px;
   transition: background 0.3s, color 0.3s;
 }
-
 .nav-links li a:hover {
   background: #ff5722;
   color: #fff;
 }
-
-
 .section {
-  min-height: 60vh;   /* smaller height but still spacious */
-  padding: 40px 20px; /* good spacing around content */
+  min-height: 45vh;   
+  padding: 40px 20px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
 .section h1 {
   margin-bottom: 15px;
   font-size: 2em;
 }
-
 .section p {
   max-width: 700px;
   line-height: 1.6;
   font-size: 1em;
 }
+#home { background: black; color: white; }
+#about { background: black; color: white; }
+#project { background: black; color: white; }
+#contact { background: black; color: white; }
 
-#home { background: #3498db; color: white; }
-#about { background: #2ecc71; color: white; }
-#services { background: #9b59b6; color: white; }
-#contact { background: #e67e22; color: white; }
 
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #111;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-  }
-  .nav-links.active {
-    display: flex;
-  }
+
+
+
+
+
+.menu-btn {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
 }
 @media (max-width: 768px) {
-  .section {
-    min-height: 50vh;   /* even smaller for mobile */
-    padding: 30px 15px;
+  .prema {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
   }
 
   .section h1 {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 
   .section p {
-    font-size: 0.95em;
+    font-size: 0.9em;
   }
 }
-.rahul img{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
+
+@media (max-width: 480px) {
+  .prema .logo {
+    font-size: 1.2em;
+  }
+
+  .section {
+    padding: 20px 10px;
+  }
+
+  .section h1 {
+    font-size: 1.2em;
+  }
+
+  .section p {
+    font-size: 0.8em;
+  }
 }
+
